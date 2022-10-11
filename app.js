@@ -1,7 +1,7 @@
 setInterval(function() {
     var date = new Date(),
         positions = [
-          date.getHours() / 24,
+          date.getHours() / 12,
           date.getMinutes() / 60,
           date.getSeconds() / 60
         ],
