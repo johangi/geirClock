@@ -24,3 +24,7 @@ setInterval(function() {
     });
   
   }, 1000);
+
+  document.querySelector('body').addEventListener('click', e => {
+    alert("It's Geir O'Clock!")
+  })
