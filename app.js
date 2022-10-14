@@ -24,7 +24,15 @@ setInterval(function() {
     });
   
   }, 1000);
-
-  document.querySelector('body').addEventListener('click', e => {
-    alert("It's Geir O'Clock!")
-  })
+    
+    let geir = true
+    const geirIMG = document.querySelector(".geirIMG");
+    document.querySelector('body').addEventListener('click', e => {
+      if(geir === false){
+        geirIMG.setAttribute("src", "./img/gairer.png")
+        geir = true
+      } else if(geir === true){
+        geirIMG.setAttribute("src", "./img/geir.jfif")
+        geir = false
+      }
+    })
